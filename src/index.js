@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AboutUs from './components/About Us/AboutUs'
+import AboutUs from './components/About Us/AboutUs';
+import PlaceToGo from './components/Place to go/PlaceToGo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AboutUs/>
+    <App/>
   </React.StrictMode>
 );
 
