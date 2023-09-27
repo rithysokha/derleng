@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function PlaceToGo() {
   return (
-    <div>home</div>
+    <main className='h-screen bg-black'>
+      
+    </main>
   )
 }
