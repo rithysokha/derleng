@@ -22,9 +22,27 @@ export default function AboutUs() {
 
         </div>
       </div>
-      <div className=''>
-        <img src="./star.svg" alt=""/>
+      <div className=' md:flex md:m-15 sm:m-10 lg:m-20 m-5  justify-between bg-gray-500 mt-10 text-center'>
+        <div className='p-5 '>
+        <img className='hover:scale-125 duration-500' src="./star.svg" alt=""/>
+        <h1 className='text-xl font-light'>Unknown</h1>    
+        <p> is one of the most popular types of tourism in Cambodia. The country is home to a number of ancient temples and ruins, including the world-famous Angkor Wat temple complex. </p>
+
+        </div>
+        <div className='p-5'>
+        <img className='hover:scale-125 duration-500' src="./star.svg" alt=""/>
+        <h1 className='text-xl font-light'>Unknown</h1>   
+        <p> is one of the most popular types of tourism in Cambodia. The country is home to a number of ancient temples and ruins, including the world-famous Angkor Wat temple complex. </p>
+
+        </div>
+        <div className='p-5'>
+        <img className='hover:scale-125 duration-500' src="./star.svg" alt=""/>
+        <h1 className='text-xl font-light'>Unknown</h1>    
+        <p> is one of the most popular types of tourism in Cambodia. The country is home to a number of ancient temples and ruins, including the world-famous Angkor Wat temple complex. </p>
+
+        </div>
       </div>
+      <h3 className='text-center'>Copyright @ 2023 Traveling Cambodia</h3>
    
     </div>
   )
