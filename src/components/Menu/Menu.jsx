@@ -17,25 +17,25 @@ import Logo from "../../logopage.png";
 export default function Menu() {
   return (
     <Router>
-      <div className="App ">
+      <div className="App">
         <div className="flex justify-between">
-          <div className="ml-8 my-4">
+          <div className="my-4">
             <img src={Logo} alt="Logo page" className="w-44" />
           </div>
           <ul className="flex items-center">
             <li className="m-2">
-              <Link to="/">Home</Link>
+              <Link to="/">HOME</Link>
             </li>
             <li className="m-2">
-              <Link to="/aboutus">About Us</Link>
+              <Link to="/aboutus">ABOUT US</Link>
             </li>
             <li className="m-2">
-              <Link to="/placetogo">Place to go</Link>
+              <Link to="/placetogo">PLACE TO GO</Link>
             </li>
             <li className="m-2">
               <Link to="/place">Place</Link>
             </li>
-            <li className="m-2">
+            <li className="my-2 ml-2">
               <Link to="/faq">FAQ</Link>
             </li>
           </ul>

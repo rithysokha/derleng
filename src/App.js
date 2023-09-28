@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer'
 console.log(Report)
 export default function App() {
   return (
-  <div>
+  <div className='mx-[5%]'>
     <Menu />
     <Footer />
   </div>
