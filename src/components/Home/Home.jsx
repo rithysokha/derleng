@@ -1,7 +1,9 @@
-import React from "react";
+import { userEffect, React } from "react";
+import axios from "axios";
 import img1 from "../../assets/imgwatermark.jpg";
 import img2 from "../../assets/img3.jpg";
 export default function PlaceToGo() {
+  
   return (
     <main>
       <div className="bg-hero h-[90vh] bg-cover bg-no-repeat">
