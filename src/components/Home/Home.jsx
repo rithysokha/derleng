@@ -14,14 +14,14 @@ export default function PlaceToGo() {
   })()
 })
   return (
-    <main className="mx-[5%]">
+    <main className="xl:mx-[5%] lg:mx-[4%]">
       <div className="bg-hero h-[90vh] bg-cover bg-no-repeat">
         <div className="bg-sky-950/30 h-full backdrop-brightness-75">
           <div className="flex flex-col justify-center justify-items-center h-full w-1/3 ml-[5%]">
-            <h1 className="text-white text-4xl font-bold mb-10">
+            <h1 className="text-white xl:text-4xl lg:text-3xl font-bold xl:mb-10 lg:mb-5">
               Traveling in Cambodia with DERLENG
             </h1>
-            <h2 className="text-white text-2xl font-bold mb-10">
+            <h2 className="text-white xl:text-2xl lg:text-xl font-bold xl:mb-10 lg:mb-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Accusantium praesentium ipsum delectus corrupti mollitia ullam
             </h2>
@@ -32,11 +32,11 @@ export default function PlaceToGo() {
         </div>
       </div>
 
-      <section className="h-screen">
+      <section className="h-screen lg:mt-[5%]">
         <div className="flex justify-between items-center h-full">
           <div className="">
-            <div className="mb-[12%]">
-          <h1 className="text-3xl font-semibold">Most Popular Places</h1>
+            <div className="xl:mb-[12%] lg:mb-[6%]">
+          <h1 className="xl:text-3xl font-semibold">Most Popular Places</h1>
         <h4 className="text-xl">These are the places that have most visitor in Cambodia</h4> 
             </div>
         <img
