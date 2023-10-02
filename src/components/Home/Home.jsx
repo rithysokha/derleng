@@ -1,11 +1,20 @@
-import { userEffect, React } from "react";
+import { useEffect, React } from "react";
 import axios from "axios";
 import img1 from "../../assets/imgwatermark.jpg";
 import img2 from "../../assets/img3.jpg";
 export default function PlaceToGo() {
-  
+  useEffect(() =>{
+    (async() => {
+    try{
+      const result = await axios.get('https://stage.strapi.rupp.support/api/home?populate= Bannerr.Img')
+      console.log(result)
+    }catch(error){
+      console.log(error)
+    }
+  })()
+})
   return (
-    <main>
+    <main className="mx-[5%]">
       <div className="bg-hero h-[90vh] bg-cover bg-no-repeat">
         <div className="bg-sky-950/30 h-full backdrop-brightness-75">
           <div className="flex flex-col justify-center justify-items-center h-full w-1/3 ml-[5%]">

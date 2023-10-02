@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function AboutUs() {
   return (
-    <div className='bg-gradient-to-b from-[#88AA7E] to-[#56BCD6] h-[100%] text-white'>
+    <div>
       <div>
-        <h1 className='uppercase text-white font-bold text-6xl flex justify-center pt-20'>About Us</h1>
+        <h1 className='uppercase font-bold text-6xl flex justify-center pt-20'>About Us</h1>
       </div>
       <div className=' mt-10 p-[5vw] w-full pt-10 items-center md:flex md:justify-center'>
 
