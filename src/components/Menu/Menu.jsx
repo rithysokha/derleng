@@ -12,6 +12,7 @@ import AboutUs from "../About Us/AboutUs";
 import PlaceToGo from "../Place to go/PlaceToGo";
 import Faq from "../Faq/Faq";
 import Logo from "../../logopage.png";
+import DropDown from "./dropdown";
 
 export default function Menu() {
   return (
@@ -21,7 +22,8 @@ export default function Menu() {
           <div className="xl:my-4 lg:my-1">
             <img src={Logo} alt="Logo page" className="xl:w-44 lg:w-36" />
           </div>
-          <ul className="flex items-center">
+          <DropDown/>
+          <ul className="flex items-center max-md:hidden">
             <li className="m-2">
               <Link to="/">HOME</Link>
             </li>
@@ -40,7 +42,6 @@ export default function Menu() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/placetogo" element={<PlaceToGo />} />
-          
           <Route path="/faq" element={<Faq />} />
         </Routes>
       </div>

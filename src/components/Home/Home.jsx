@@ -60,7 +60,9 @@ export default function PlaceToGo() {
         </div>
       </section>
 
-      <section className="h-screen bg-indigo-600"></section>
+      <section className="h-screen bg-indigo-600">
+        
+      </section>
     </main>
   );
 }
