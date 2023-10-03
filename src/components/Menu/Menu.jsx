@@ -12,6 +12,8 @@ import AboutUs from "../About Us/AboutUs";
 import PlaceToGo from "../Place to go/PlaceToGo";
 import Faq from "../Faq/Faq";
 import Logo from "../../logopage.png";
+import SignIn from "../auth/SignIn";
+import SignUp from "../auth/SignUp"
 
 export default function Menu() {
   return (
@@ -38,9 +40,10 @@ export default function Menu() {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signIn" element={<SignIn />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/placetogo" element={<PlaceToGo />} />
-          
           <Route path="/faq" element={<Faq />} />
         </Routes>
       </div>
