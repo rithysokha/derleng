@@ -17,23 +17,26 @@ import DropDown from "./dropdown";
 export default function Menu() {
   return (
     <Router>
-      <div className="App xl:mx-[2%]">
-        <div className="flex justify-between sticky top-0 bg-opacity-95 bg-[#f5f5f7] z-50 xl:mx-[5%] lg:mx-[4%]">
-          <div className="xl:my-4 lg:my-1">
-            <img src={Logo} alt="Logo page" className="xl:w-44 lg:w-36" />
+      <div className="App">
+        <div className="flex justify-between sticky top-0  h-20 items-center bg-opacity-95 bg-[#f5f5f7] z-50">
+          <div className="p-5">
+            <img src={Logo} width={150} height={100}/>
           </div>
-          <DropDown/>
-          <ul className="flex items-center max-md:hidden">
-            <li className="m-2">
+          <div className="sm:hidden">
+            <DropDown/>
+          </div>
+          
+          <ul className=" items-center justify-end p-5 w-full hidden sm:flex ">
+            <li className="m-2 hover:text-white hover:bg-gray-700 p-2 rounded-xl">
               <Link to="/">HOME</Link>
             </li>
-            <li className="m-2">
+            <li className="m-2 hover:text-white hover:bg-gray-700 p-2 rounded-xl">
               <Link to="/aboutus">ABOUT US</Link>
             </li>
-            <li className="m-2">
+            <li className="m-2 hover:text-white hover:bg-gray-700 p-2 rounded-xl">
               <Link to="/placetogo">PLACE TO GO</Link>
             </li>
-            <li className="my-2 ml-2">
+            <li className="m-2 hover:text-white hover:bg-gray-700 p-2 rounded-xl">
               <Link to="/faq">FAQ</Link>
             </li>
           </ul>
