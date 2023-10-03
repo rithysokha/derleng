@@ -1,13 +1,14 @@
-import { useEffect, React } from "react";
+import React, { useEffect, useRef } from "react";
 import axios from "axios";
 import img1 from "../../assets/imgwatermark.jpg";
 import img2 from "../../assets/img3.jpg";
 export default function PlaceToGo() {
+  const banner = useRef('')
   useEffect(() =>{
     (async() => {
     try{
       const result = await axios.get('https://stage.strapi.rupp.support/api/home?populate= Bannerr.Img')
-      console.log(result)
+      banner.current = result.data.data.attributes.Bannerr
     }catch(error){
       console.log(error)
     }
@@ -19,7 +20,7 @@ export default function PlaceToGo() {
         <div className="bg-sky-950/30 h-full backdrop-brightness-75">
           <div className="flex flex-col justify-center justify-items-center h-full w-1/3 ml-[5%]">
             <h1 className="text-white text-4xl font-bold mb-10">
-              Traveling in Cambodia with DERLENG
+              {banner.current.title}
             </h1>
             <h2 className="text-white text-2xl font-bold mb-10">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
